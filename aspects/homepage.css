@@ -65,7 +65,7 @@ body {
   @media screen and (max-width: 767px) {
     .modal-content {
         width: 90%;
-        height: 30%;
+        height: 35%;
         max-height: 400px;
     }
 
