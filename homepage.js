@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Main modal elements
+
     const modal = document.getElementById('myModal');
     const openModalBtn = document.getElementById('openModal');
     const closeBtn = document.querySelector('#myModal .close');
 
-    // About modal elements
+
     const aboutModal = document.getElementById('aboutModal');
     const aboutBtn = document.getElementById('aboutBtn');
     const closeAboutBtn = document.querySelector('#aboutModal .close');
