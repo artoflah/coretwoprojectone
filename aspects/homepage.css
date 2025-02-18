@@ -33,7 +33,8 @@ body {
 
   @media screen and (max-width: 767px) {
     .clickable-text {
-        font-size: 15vh; 
+        font-size: 13vh; 
+        justify-content: center;
     }
 }
   
