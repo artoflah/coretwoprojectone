@@ -101,11 +101,11 @@ body {
     }
 
     .content-text {
-        font-size: 0.5vh;
+        font-size: 1vh;
         bottom: 10px;
         max-width: 85%;
         line-height: 1.2;
-        padding: 0 5px;
+        padding: 0 10px;
     }
 }
 
