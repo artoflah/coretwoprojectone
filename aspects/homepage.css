@@ -33,7 +33,7 @@ body {
 
   @media screen and (max-width: 767px) {
     .clickable-text {
-        font-size: 30vw; 
+        font-size: 50vh; 
     }
 }
   
