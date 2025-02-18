@@ -1,0 +1,11 @@
+body{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'DOTMBold', 'sans-serif';
+}
+
+@font-face {
+    font-family: "DOTMBold";
+    src: url("DOTMBold.TTF");
+  }
