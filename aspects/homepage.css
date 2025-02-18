@@ -30,10 +30,10 @@ body {
     filter: blur(10px);
     color: rgba(66, 181, 89, 0.906);
   }
-  
+
   @media screen and (max-width: 767px) {
     .clickable-text {
-        font-size: 10vw; 
+        font-size: 30vw; 
     }
 }
   
