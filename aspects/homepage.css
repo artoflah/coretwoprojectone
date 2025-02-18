@@ -1,14 +1,14 @@
 body {   
-  background-image: url("noctisbackground2.png");   
-  background-size: cover;   
-  background-repeat: no-repeat;   
-  height: 100vh;   
-  display: flex;   
-  justify-content: center;   
-  align-items: center;   
-  margin: 0;   
-  text-align: center;   
-  cursor: url('unnamed.png'), pointer; 
+background-image: url("noctisbackground2.png");   
+background-size: cover;   
+background-repeat: no-repeat;   
+height: 100vh;   
+display: flex;   
+justify-content: center;   
+align-items: center;   
+margin: 0;   
+text-align: center;   
+cursor: url('unnamed.png'), pointer; 
 }  
 
 @font-face {
@@ -38,20 +38,22 @@ body {
   width: 100%;  
   height: 100%; 
   background-color: rgb(0, 0, 0); 
+  display: none; 
   justify-content: center;
   align-items: center;
   top: 0;
   left: 0;
+ 
 }
 
 .modal-content {
   position: relative;   
-  width: 85%;
-  height: 70%;
+  width: 80%; 
+  height: 80%; 
   max-width: 1200px;  
-  max-height: 600px;
+  max-height: 800px; 
   background-image: url("POPUPBACKGROUND.png");   
-  background-size: contain;
+  background-size: cover;   
   background-position: center; 
   display: flex;   
   justify-content: center;
@@ -77,62 +79,28 @@ body {
   overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
-  .modal-section[data-section="1"] {
-      width: 29%;
-      margin-left: 3.5%;
-      margin-top: 2%;
-  }
-
-  .modal-section[data-section="2"] {
-      width: 12%;
-      margin-left: 1.3%;
-      margin-top: 3%;
-  }
-
-  .modal-section[data-section="3"] {
-      width: 21.4%;
-      margin-left: 0.6%;
-      margin-top: 2.9%;
-  }
-
-  .modal-section[data-section="4"] {
-      width: 20%;
-      margin-left: 0.7%;
-      margin-top: 2.8%;
-  }
+.modal-section[data-section="1"] {
+  width: 29%;
+  margin-left: 3.5%;
+margin-top: 2%;
 }
 
-@media screen and (max-width: 767px) {
-  .modal-content {
-      width: 90%;
-      height: 55vh;
-      max-height: 500px;
-  }
+.modal-section[data-section="2"] {
+  width: 12%;
+  margin-left: 1.3%;
+  margin-top: 3%;
+}
 
-  .modal-section[data-section="1"] {
-      width: 27%;
-      margin-left: 3%;
-      margin-top: 1%;
-  }
+.modal-section[data-section="3"] {
+  width: 21.4%;
+  margin-left: 0.6%;
+  margin-top: 2.9%;
+}
 
-  .modal-section[data-section="2"] {
-      width: 10%;
-      margin-left: 1%;
-      margin-top: 1.5%;
-  }
-
-  .modal-section[data-section="3"] {
-      width: 19.4%;
-      margin-left: 0.5%;
-      margin-top: 1.4%;
-  }
-
-  .modal-section[data-section="4"] {
-      width: 18%;
-      margin-left: 0.5%;
-      margin-top: 1.3%;
-  }
+.modal-section[data-section="4"] {
+  width: 20%;
+  margin-left: 0.7%;
+  margin-top: 2.8%;
 }
 
 .section-content {
@@ -164,7 +132,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: auto;
-  max-width: 90%;
+  max-width: 80%;
   z-index: 2;
   opacity: 0;
   visibility: hidden;
@@ -178,23 +146,6 @@ body {
   white-space: normal; 
 }
 
-@media screen and (max-width: 767px) {
-  .content-text {
-      font-size: 0.85rem;
-      bottom: 15px;
-      padding: 0 8px;
-      max-width: 85%;
-      line-height: 1.3;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .content-text {
-      font-size: 0.75rem;
-      bottom: 10px;
-      line-height: 1.2;
-  }
-}
 
 .content-text::after {
   content: '|'; 
@@ -202,13 +153,21 @@ body {
   animation: blink 0.75s step-end infinite;
 }
 
+
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
+
 @keyframes blink {
-  50% { opacity: 0; }
+  50% {
+    opacity: 0;
+  }
 }
 
 .close {
@@ -221,15 +180,6 @@ body {
   cursor: pointer;
   z-index: 2;
 }
-
-@media screen and (max-width: 767px) {
-  .close {
-      right: 15px;
-      top: 15px;
-      font-size: 28px;
-  }
-}
-
 .audio-control {
   position: fixed;
   bottom: 20px;
@@ -248,16 +198,6 @@ body {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 767px) {
-  .audio-control {
-      bottom: 15px;
-      right: 15px;
-      width: 35px;
-      height: 35px;
-      font-size: 16px;
-  }
-}
-
 .audio-control:hover {
   transform: scale(1.1);
   background: rgba(66, 181, 89, 1);
@@ -274,14 +214,6 @@ body {
   top: 20px;      
   right: 20px;     
   z-index: 999;    
-}
-
-@media screen and (max-width: 767px) {
-  #aboutBtn {
-      font-size: 4vw;
-      top: 15px;
-      right: 15px;
-  }
 }
 
 #aboutBtn:hover {
@@ -305,8 +237,8 @@ body {
 
 #aboutModal .modal-content1 {
   position: relative;
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
   max-width: 800px;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
@@ -323,18 +255,4 @@ body {
   font-family: "helvetica";
   color: #6dff79;
   line-height: 1.5;
-}
-
-@media screen and (max-width: 767px) {
-  #aboutModal .modal-content1 {
-      width: 85%;
-      height: 70%;
-      padding: 15px;
-  }
-  
-  .about-text {
-      font-size: 0.8rem;
-      padding: 8px;
-      line-height: 1.3;
-  }
 }
