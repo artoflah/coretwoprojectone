@@ -101,37 +101,21 @@ body {
     }
 
     .content-text {
-      position: fixed;
-      bottom: 15vh;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 85vw;
-      font-size: 1.8vh;
-      line-height: 1.4;
-      text-align: center;
-      white-space: pre-wrap;
-      word-break: break-word;
-      overflow-wrap: break-word;
-      margin: 0 auto;
-      padding: 0 10px;
+        font-size: 0.9vh;
+        bottom: 15px;
+        max-width: 95%;
+        line-height: 1.2;
+        padding: 0 10px;
     }
 }
 
 @media screen and (max-width: 480px) {
   .content-text {
-    position: fixed;
-    bottom: 15vh;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 85vw;
-    font-size: 1.8vh;
-    line-height: 1.4;
-    text-align: center;
-    white-space: pre-wrap;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    margin: 0 auto;
-    padding: 0 10px;
+      font-size: 0.9vh;
+      bottom: 15px;
+      max-width: 95%;
+      line-height: 1.2;
+      padding: 0 10px;
   }
 }
   
