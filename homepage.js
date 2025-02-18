@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-
     const modal = document.getElementById('myModal');
     const openModalBtn = document.getElementById('openModal');
     const closeBtn = document.querySelector('#myModal .close');
-
 
     const aboutModal = document.getElementById('aboutModal');
     const aboutBtn = document.getElementById('aboutBtn');
@@ -167,11 +165,25 @@ document.addEventListener('DOMContentLoaded', function () {
         element.innerHTML = '';
         isTyping = true;
 
+        // Pre-process the text to add line breaks at natural points
+        const words = originalText.split(' ');
+        const processedText = words.reduce((acc, word, i) => {
+            // Add a natural break every ~5-7 words or at punctuation
+            if (i > 0 && (i % 6 === 0 || word.includes('.') || word.includes('?') || word.includes('!'))) {
+                return acc + ' ' + word + '\n';
+            }
+            return acc + ' ' + word;
+        }, '').trim();
+
         function type() {
-            if (index < originalText.length) {
-                element.innerHTML += originalText.charAt(index);
-                if (originalText.charAt(index) !== ' ') {
-                    playTypewriterSound();
+            if (index < processedText.length) {
+                if (processedText.charAt(index) === '\n') {
+                    element.innerHTML += '<br>';
+                } else {
+                    element.innerHTML += processedText.charAt(index);
+                    if (processedText.charAt(index) !== ' ') {
+                        playTypewriterSound();
+                    }
                 }
                 index++;
                 setTimeout(type, 100);
