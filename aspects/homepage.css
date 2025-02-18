@@ -111,11 +111,11 @@ body {
 
 @media screen and (max-width: 480px) {
   .content-text {
-      font-size: 0.9vh;
-      bottom: 15px;
-      max-width: 95%;
-      line-height: 1.2;
-      padding: 0 10px;
+    font-size: 1vh;
+    bottom: 10px;
+    max-width: 85%;
+    line-height: 1.2;
+    padding: 0 10px;
   }
 }
   
