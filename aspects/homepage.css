@@ -110,6 +110,10 @@ body {
       bottom: 10px; 
       width:400px !important;
   }
+  .audio-control {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -118,6 +122,10 @@ body {
       max-width: 95%;
       line-height: 1.6; 
       width:400px !important;
+  }
+  .audio-control {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
   }
 }
   
@@ -232,54 +240,60 @@ body {
   .close {
     position: fixed;
     right: 25px;
-    top: 25px;
+    top: 35px;
     color: rgba(66, 181, 89, 0.9);
-    font-size: 35px;
+    font-size: 45px;
     font-weight: bold;
     cursor: pointer;
     z-index: 2;
   }
-  .audio-control {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    background: rgba(66, 181, 89, 0.9);
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-  }
-  
-  .audio-control:hover {
-    transform: scale(1.1);
-    background: rgba(66, 181, 89, 1);
-  }
-  
-  #aboutBtn {
-    font-size: 3vw; 
-    color: rgb(0, 0, 0);
+  .about-text-link {
+    font-size: 3vh; 
+    color: rgb(255, 255, 255); 
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: "Void";
     position: fixed; 
-    top: 20px;      
-    right: 20px;     
+    top: 10px;      
+    right: 15px;     
     z-index: 999;    
-  }
-  
-  #aboutBtn:hover {
+    text-shadow: 0px 0px 10px rgba(66, 181, 89, 0.8); 
+    margin: 0vh;
+}
+
+.about-text-link:hover {
     transform: scale(1.1);
-    filter: blur(3px);    
-    color: rgba(66, 181, 89, 0.906);
-  }
+    filter: blur(5px);    
+    color: rgba(66, 255, 89, 1); 
+}
+
+
+.audio-control {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: transparent;
+    border: 2px solid rgba(66, 181, 89, 0.9);
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(66, 181, 89, 0.9);
+    text-shadow: 0px 0px 10px rgba(66, 181, 89, 1); 
+    transition: all 0.3s ease;
+}
+
+.audio-control:hover {
+    transform: scale(1.1);
+    background: rgba(66, 181, 89, 0.2); 
+    border: 2px solid rgba(66, 181, 89, 1);
+}
   
   #aboutModal {
     display: none;
